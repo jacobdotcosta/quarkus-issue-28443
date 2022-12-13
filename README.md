@@ -51,11 +51,9 @@ Listening for transport dt_socket at address: 5005
 
 args: 2
 [param1=1, param2=2]
-
 ```
 
 ...and...
-
 
 ```shell script
 quarkus dev -- param1=1 param2=2
@@ -67,5 +65,19 @@ Listening for transport dt_socket at address: 5005
 
 args: 1
 [param1=1 , param2=2]
+```
 
+## The integration tests
+
+```shell script
+./mvnw verify -T0.5C -f integration-tests/gradle/ -Dtest=io.quarkus.gradle.devmode.BasicJavaApplicationModuleDevModeTest
+
+```
+
+## Cheat sheet
+
+Build quarkus `devtools/gradle/gradle-application-plugin` module by executing the following statement. 
+
+```shell script
+./mvnw install -T0.5C -f devtools/gradle/gradle-application-plugin/
 ```
