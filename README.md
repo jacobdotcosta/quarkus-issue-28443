@@ -70,7 +70,7 @@ args: 1
 ## The integration tests
 
 ```shell script
-./mvnw verify -T0.5C -f integration-tests/gradle/ -Dtest=io.quarkus.gradle.devmode.BasicJavaApplicationModuleDevModeTest
+./mvnw verify -T0.5C -f integration-tests/gradle/ -Dtest=io.quarkus.gradle.devmode.BasicJavaMainApplicationModuleDevModeTest
 
 ```
 
