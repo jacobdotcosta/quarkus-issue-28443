@@ -24,6 +24,18 @@ $ ./mvnw install -T0.5C -f devtools/gradle/gradle-application-plugin/
 
 ## Testing the changes
 
+Verify the changes to the quarkus project
+
+```shell script
+./mvnw verify -T0.5C -f devtools/gradle/gradle-application-plugin/
+```
+
+Install the changes made to the quarkus project.
+
+```shell script
+$ ./mvnw install -T0.5C -Dno-test-modules -DskipTests -DskipITs
+```
+
 You can run your application in dev mode that enables live coding using:
 
 ```shell script
